@@ -22,8 +22,6 @@ jobs:
         image_name:
           - silverblue
         major_version: [39]
-        include:
-        exclude:
     steps:
       # Checkout push-to-registry action GitHub repository
       - name: Checkout Push to Registry action
