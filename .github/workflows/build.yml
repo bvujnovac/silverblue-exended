@@ -56,6 +56,8 @@ jobs:
               BUILD_TAGS+=("${TAG}-${TIMESTAMP}")
           done
 
+          alias_tags=("${BUILD_TAGS[@]}")
+
           echo "Generated the following build tags: "
           for TAG in "${BUILD_TAGS[@]}"; do
               echo "${TAG}"
