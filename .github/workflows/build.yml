@@ -32,7 +32,7 @@ jobs:
         run: |
           echo "SOURCE_ORG=fedora-ostree-desktops" >> $GITHUB_ENV
           echo "SOURCE_IMAGE=${{ matrix.image_name }}" >> $GITHUB_ENV
-          echo "IMAGE_NAME=${{ matrix.image_name }}-extended" >> $GITHUB_ENV
+          echo "IMAGE_NAME=${{ matrix.image_name }}" >> $GITHUB_ENV
       - name: Generate tags
         id: generate-tags
         shell: bash
@@ -102,7 +102,7 @@ jobs:
           tags: |
             ${{ steps.generate-tags.outputs.alias_tags }}
           build-args: |
-            IMAGE_NAME="${{ matrix.image_name }}-extended"
+            IMAGE_NAME="${{ matrix.image_name }}"
             SOURCE_ORG=${{ env.SOURCE_ORG }}
             SOURCE_IMAGE=${{ env.SOURCE_IMAGE }}
             FEDORA_MAJOR_VERSION=${{ matrix.major_version }}
