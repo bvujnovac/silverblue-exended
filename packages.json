@@ -54,6 +54,8 @@
                 "gnome-epub-thumbnailer",
                 "gnome-tweaks",
                 "gvfs-nfs",
+                "gparted",
+                "nautilus-extensions",
                 "gnome-shell-extension-appindicator",
                 "gnome-shell-extension-blur-my-shell",
                 "gnome-shell-extension-dash-to-dock"
